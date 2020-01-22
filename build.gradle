@@ -16,3 +16,10 @@ dependencies {
     compile project(':commun_javafx')
 
 }
+
+task(joueur01, dependsOn: 'classes', type: JavaExec) {
+
+   main = 'mortiers_javafx.Principal'
+   classpath = sourceSets.main.runtimeClasspath
+   
+}
